@@ -1,23 +1,40 @@
-.banner{
-    background-image:  linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.445)), url(images/bg-messi.jpeg);
+.banner {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.445)), url(images/bg-messi.jpeg);
     height: 350px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
-.title-style{
+.title-style {
     padding-top: 150px;
     font-size: 50px;
 }
-.section-container{
-    width: 90%;
+
+.section {
+    width: 96%;
     margin: auto;
 }
-.player-img{
-    height: 150px;
+
+.player-img {
+    height: 300px;
 }
-.set-height{
+
+.set-height {
     height: 200px;
     margin-bottom: 80px;
+}
+
+
+.makeSmCol {
+    display: flex;
+}
+
+@media (max-width : 667px) {
+    .makeSmCol {
+        flex-direction: column;
+    }
+    .makeSmFull{
+        width: 100%;
+    }
 }
